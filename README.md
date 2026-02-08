@@ -41,7 +41,7 @@ Este repositorio contiene los siguientes scripts esenciales para la operatividad
 ## 5. Instrucciones para Levantar el Proyecto
 
 1.  **Clonar este Repositorio: **
-2.  **git clone https://github.com/jzaxml/databaseII.git** 
+2.  **git clone https://github.com/jzaxml/Workshop.git** 
 3.  **Configurar Atlas:** Asegurar que el clúster M0 esté activo y se haya configurado el acceso IP.
 4.  **Conexión con Compass:** Conectar MongoDB Compass usando el *Connection String* de Atlas.
 5.  **Carga Inicial:** Importar el CSV del *Amazon Sales Dataset* a una colección temporal.
