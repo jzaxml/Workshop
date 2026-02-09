@@ -34,9 +34,10 @@ Este repositorio contiene los siguientes scripts esenciales para la operatividad
 | Archivo | Descripción | Uso |
 | :--- | :--- | :--- |
 | **`clean.js`** | Contiene el *Aggregation Pipeline* utilizado para transformar la data plana del CSV en el modelo documental optimizado. Incluye la lógica de limpieza de precios y el patrón de **Embedding** (embebido) de las reseñas dentro del documento `products`. | Script de **Modelado y Limpieza** |
+| **`index.js`** | Contiene el codigo de la creacion de los indices necesarios para la optimizacion de las busque de documentos |
 | **`validation.js`** | Contiene el código de **JSON Schema Validation** aplicado a la colección `products`. Asegura la integridad de datos críticos (p.ej., precios no negativos, rating entre 0 y 5, campos obligatorios en las reseñas). | Script de **Integridad de Datos** |
-| **`queries.js`** | Contiene todos los *Aggregation Pipelines* solicitados en el proyecto (Reporte de Ventas, Top Productos, Bucket Pattern), listos para ser ejecutados en la consola. | Scripts de **Consultas Analíticas** |
-| **`search.atlas.js`** | Contiene la consulta de demostración para el motor de **Atlas Search**, incluyendo la configuración de la búsqueda `fuzzy` y la proyección del `searchScore`. | Script de **Búsqueda Avanzada** |
+| **`pipeline.js`** | Contiene todos los *Aggregation Pipelines* solicitados en el proyecto (Reporte de Ventas, Top Productos, Bucket Pattern), listos para ser ejecutados en la consola. | Scripts de **Consultas Analíticas** |
+| **`AtlasSearch.js`** | Contiene la consulta de demostración para el motor de **Atlas Search**, incluyendo la configuración de la búsqueda `fuzzy` y la proyección del `searchScore`. | Script de **Búsqueda Avanzada** |
 
 ## 5. Instrucciones para Levantar el Proyecto
 
