@@ -2,7 +2,7 @@
 Presentación MongoDB Performance
 # databaseII
 
-# Proyecto N° 1: GlobalMarket Analytics & Search Engine
+# Proyecto : GlobalMarket Analytics & Search Engine
 
 ## 1. Introducción
 
