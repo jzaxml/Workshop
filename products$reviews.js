@@ -2,6 +2,7 @@
 db.amazon_products_clean.aggregate([
   {
     // 1. Agrupamos por product_id para eliminar duplicados
+    // Esto asegura que cada producto tenga un único documento, combinando la información de los campos relacionados
     $group: {
       _id: "$product_id",
       product_name: { $first: "$product_name" },
@@ -18,6 +19,7 @@ db.amazon_products_clean.aggregate([
   },
   {
     // 2. Ahora estructuramos y convertimos tipos de datos
+    // Convertimos los campos a los tipos de datos adecuados para facilitar consultas y análisis posteriores
     $project: {
       _id: 1, // El _id ya es el product_id por el $group
       product_name: 1,
@@ -25,9 +27,9 @@ db.amazon_products_clean.aggregate([
       pricing: {
         discounted_price: { $toDecimal: "$discounted_price" },
         actual_price: { $toDecimal: "$actual_price" },
-        //discount_percentage: {
-        //  $toInt: { $arrayElemAt: [{ $split: ["$discount_percentage", "%"] }, 0] }
-        //}
+        discount_percentage: {
+          $toInt: { $arrayElemAt: [{ $split: ["$discount_percentage", "%"] }, 0] }
+        }
       },
       metrics: {
         rating: { $toDouble: "$rating" },
