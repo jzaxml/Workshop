@@ -4,7 +4,7 @@ Presentación MongoDB Performance
 ## Profesora:
 *   Clinia Cordero 
 ## Integrantes
-*   Jesús Ramírez 31074731 \n
+*   Jesús Ramírez 31074731
 *   Anarella Mendez 30298370
 *   Jose zambrano 20808434
 # Proyecto : GlobalMarket Analytics & Search Engine
